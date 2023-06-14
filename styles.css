@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+#bar {
+    margin-left: 12px;
+    margin-top: 12px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#grid {
+    margin-top: 12px;
+    margin-left: 12px;
+    display: flex;
+}
+
+.grid-item {
+    background-color:white; /* when bg color changes,color of text also must change */
+    max-width: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-color: black;
+}
+
