@@ -1,4 +1,4 @@
-# DOM Challenges III
+# DOM Challenges III - Huda Ayaz, Aminata Cisse, Elaine Luzung
 
 - **Due** June 15th, 2023 by 10:00:00AM
 - **Points** 20
