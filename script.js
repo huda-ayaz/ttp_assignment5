@@ -6,7 +6,7 @@ function addRow() {
     let r = tbl.insertRow()
     for (let i = 0; i < table.rows[0].cells.length; i++) {
         r.insertCell();
-    }
+}
 }
 
 // Add columns to the grid
