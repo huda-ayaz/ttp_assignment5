@@ -9,10 +9,10 @@
 </head>
 <body>
     <div id="bar">
-        <button class="btn-rowAdd">+ Row</button>
-        <button class="btn-rowDel">- Row</button>
-        <button class="btn-colAdd">+ Column</button>
-        <button class="btn-colDel">- Column</button>
+        <button onclick="addRow()" class="btn-rowAdd">+ Row</button>
+        <button onclick="delRow()" class="btn-rowDel">- Row</button>
+        <button onclick="addCol()" class="btn-colAdd">+ Column</button>
+        <button onclick="delCol()" class="btn-colDel">- Column</button>
         <select name="colors" id="colors">
             <option value="color">Color</option>
             <option value="red">Red</option>
@@ -24,12 +24,11 @@
         <button class="clear">Clear ALL</button>
     </div>
     <div id="grid">
-        <div class="grid-item">
-            <span>one</span>
-        </div>
-        <div class="grid-item">
-            <span>one</span>
-        </div>
+        <table>
+            <tr>
+                <td>TTP</td>
+            </tr>
+          </table>
     </div>
 </body>
 <script src="script.js" defer></script>
