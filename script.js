@@ -32,3 +32,32 @@ function delCol() {
       }
     }
 }
+
+//click and hold (mouseover) from a single cell (start) to a different cell (end) such that all 
+//affected/hovered-over cells from start to end change to the currently selected color
+
+function dragAndFill() {
+    var isDrag = false;
+
+    tbl.addEventListener("mousedown", function(event) {
+        let cell = event.target;
+        if(cell.tagName === "TD") {
+            isDrag = true;
+            cell.style.backgroundColor = "red"; 
+        }
+        //selectColorFunction goes here
+    });
+
+    tbl.addEventListener("mouseover", function(event) {
+        let cell = event.target;
+        if(isDrag) {
+            if(cell.tagName === "TD") {
+                cell.style.backgroundColor = "red"; 
+            }
+        }
+    });
+
+    tbl.addEventListener("mouseup", function(event) {
+        isDrag = false;
+    });
+}
