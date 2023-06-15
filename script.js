@@ -16,3 +16,19 @@ function addCol() {
        tbl.rows[i].insertCell();
     }
 }
+
+// Delete row from the grid
+
+function delRow() {
+    tbl.deleteRow(tbl.rows.length-1);
+}
+
+// Delete column from the grid
+
+function delCol() {
+    if (tbl.rows.length > 0) {
+      for (let i = 0; i < tbl.rows.length; i++) {
+        tbl.rows[i].deleteCell(tbl.rows[0].cells.length - 1);
+      }
+    }
+}
